@@ -37,7 +37,8 @@ var mainView = myApp.addView('.view-main', {
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
-
+    window.open = cordova.InAppBrowser.open;
+    window.location.href=  cordova.InAppBrowser.open;
     // Set AdMobAds options:
     window.plugins.AdMob.setOptions({
         publisherId: "ca-app-pub-3715336230214756/7045197420", // Required
