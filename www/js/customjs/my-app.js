@@ -49,28 +49,34 @@ $$(document).on('deviceready', function() {
         bannerAtTop: false, // set to true, to put banner at top
         overlap: true, // set to true, to allow banner overlap webview
         offsetStatusBar: false, // set to true to avoid ios7 status bar overlap
-        autoShow:false,
+        autoShow:true,
         autoShowBanner: true, // auto show banners ad when loaded
         autoShowInterstitial: true // auto show interstitials ad when loaded	// Optional
     });
 
     // Start showing banners (atomatic when autoShowBanner is set to true)
     window.plugins.AdMob.createBannerView();
-    window.plugins.AdMob.showAd(true,function(){},function(){});
-
     window.plugins.AdMob.createInterstitialView();
-    window.plugins.AdMob.showInterstitialAd(
-     true,
-     function(){},
-     function(e){}
-   );
+
+
+    window.plugins.AdMob.showAd(true,function(){
+      window.plugins.AdMob.showInterstitialAd(
+       true,
+       function(){
+         var target = "_blank";
+         var options = "location=no";
+         var url = "https://globfone.com/send-text/";
+         window.open(url, target, options);
+       },
+       function(e){}
+     );
+    },function(){});
+
+
+
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(5, function() {
-        window.plugins.AdMob.showInterstitialAd(
-         true,
-         function(){},
-         function(e){}
-       );
+
     });
 
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
