@@ -138,23 +138,6 @@ module.exports = [
         "id": "cordova-plugin-device.DeviceProxy",
         "pluginId": "cordova-plugin-device",
         "runs": true
-    },
-    {
-        "file": "plugins/cordova-connectivity-monitor/www/connectivity.js",
-        "id": "cordova-connectivity-monitor.connectivity",
-        "pluginId": "cordova-connectivity-monitor",
-        "clobbers": [
-            "window.connectivity"
-        ]
-    },
-    {
-        "file": "plugins/cordova-admob/www/admob.js",
-        "id": "cordova-admob.AdMobAds",
-        "pluginId": "cordova-admob",
-        "clobbers": [
-            "window.admob",
-            "window.tappx"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -171,9 +154,7 @@ module.exports.metadata =
     "cordova-plugin-x-toast": "2.5.2",
     "cordova-plugin-x-socialsharing": "5.1.6",
     "cordova-plugin-network-information": "1.3.2",
-    "cordova-plugin-device": "1.1.6",
-    "cordova-connectivity-monitor": "1.2.2",
-    "cordova-admob": "4.1.16"
+    "cordova-plugin-device": "1.1.6"
 }
 // BOTTOM OF METADATA
 });

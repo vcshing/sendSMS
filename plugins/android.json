@@ -10,9 +10,6 @@
         "com.verso.cordova.clipboard": {
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         },
-        "cordova-admob": {
-            "PACKAGE_NAME": "com.skyexplorer.sendsms"
-        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         },
@@ -42,9 +39,6 @@
         }
     },
     "dependent_plugins": {
-        "cordova-connectivity-monitor": {
-            "PACKAGE_NAME": "com.skyexplorer.sendsms"
-        },
         "cordova-plugin-x-toast": {
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         },

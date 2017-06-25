@@ -9,23 +9,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-connectivity-monitor.connectivity",
-        "file": "plugins/cordova-connectivity-monitor/www/connectivity.js",
-        "pluginId": "cordova-connectivity-monitor",
-        "clobbers": [
-            "window.connectivity"
-        ]
-    },
-    {
-        "id": "cordova-admob.AdMobAds",
-        "file": "plugins/cordova-admob/www/admob.js",
-        "pluginId": "cordova-admob",
-        "clobbers": [
-            "window.admob",
-            "window.tappx"
-        ]
-    },
-    {
         "id": "cordova-plugin-device.device",
         "file": "plugins/cordova-plugin-device/www/device.js",
         "pluginId": "cordova-plugin-device",
@@ -126,8 +109,6 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "com.verso.cordova.clipboard": "0.1.0",
-    "cordova-connectivity-monitor": "1.2.2",
-    "cordova-admob": "4.1.16",
     "cordova-plugin-console": "1.0.4",
     "cordova-plugin-device": "1.1.6",
     "cordova-plugin-dialogs": "1.3.0",
