@@ -6,9 +6,10 @@ var loopLangArr = []
 
 
 defaultLangArr.push("Free SMS");
+defaultLangArr.push("Send SMS");
 defaultLangArr.push("其他應用");
 defaultLangArr.push("分享應用");
-defaultLangArr.push("請點擊選擇地圖");
+
 
 menuArr.push("台北捷運");
 menuArr.push("高雄捷運");

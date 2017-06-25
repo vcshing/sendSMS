@@ -10,6 +10,11 @@ $(".shareApp").bind("click", function(e) {
     window.plugins.socialsharing.share("Free SMS", "Good App", "", "https://play.google.com/store/apps/details?id=com.skyexplorer.sendsms");
 })
 
+
+$(".clickme").bind("click", function(e) {
+    window.plugins.socialsharing.share("Free SMS", "Good App", "", "https://play.google.com/store/apps/details?id=com.skyexplorer.sendsms");
+})
+
 $(".googleMap").bind("click", function(e) {
     e.preventDefault();
     var target = "_system";
