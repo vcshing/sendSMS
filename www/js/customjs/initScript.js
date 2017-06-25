@@ -11,11 +11,11 @@ function mainPage(){
 		document.addEventListener("offline", onOffline, false);
 
   //  $(".pinch-zoom").html("<iframe src=\"https://globfone.com/send-text/\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
-onOnline()
+//onOnline()
     function onOnline() {
 		//	$(".pinch-zoom").html("<iframe src=\"https://globfone.com/send-text/\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
 
-      var target = "_self";
+      var target = "_blank";
       var options = "location=yes";
       var url = "https://globfone.com/send-text/";
       window.open(url, target, options);
