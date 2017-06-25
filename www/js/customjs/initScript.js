@@ -11,10 +11,16 @@ function mainPage(){
 		document.addEventListener("offline", onOffline, false);
 
   //  $(".pinch-zoom").html("<iframe src=\"https://globfone.com/send-text/\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
-
+onOnline()
     function onOnline() {
-			$(".pinch-zoom").html("<iframe src=\"https://globfone.com/send-text/\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
-		}
+		//	$(".pinch-zoom").html("<iframe src=\"https://globfone.com/send-text/\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
+
+      var target = "_self";
+      var options = "location=yes";
+      var url = "https://globfone.com/send-text/";
+      window.open(url, target, options);
+
+    }
 
 		function onOffline() {
       myApp.alert("Please connect Internet");
