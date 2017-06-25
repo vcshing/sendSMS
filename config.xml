@@ -55,7 +55,7 @@
     <preference name="loadUrlTimeoutValue" value="700000" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
-    <preference name="android-windowSoftInputMode" value="stateAlwaysHidden|adjustResize" />
+
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
