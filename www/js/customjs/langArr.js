@@ -5,7 +5,7 @@ var menuSiteArr= []
 var loopLangArr = []
 
 
-defaultLangArr.push("Send SMS");
+defaultLangArr.push("Free SMS");
 defaultLangArr.push("其他應用");
 defaultLangArr.push("分享應用");
 defaultLangArr.push("請點擊選擇地圖");

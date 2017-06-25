@@ -38,7 +38,7 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     window.open = cordova.InAppBrowser.open;
-  
+
     // Set AdMobAds options:
     window.plugins.AdMob.setOptions({
         publisherId: "ca-app-pub-3715336230214756/7045197420", // Required
@@ -58,7 +58,7 @@ $$(document).on('deviceready', function() {
     window.plugins.AdMob.createBannerView();
     window.plugins.AdMob.createInterstitialView();
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-    randomEvent(10, function() {
+    randomEvent(5, function() {
         window.plugins.AdMob.showInterstitialAd(
          true,
          function(){},
