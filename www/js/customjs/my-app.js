@@ -48,6 +48,7 @@ $$(document).on('deviceready', function() {
         bannerAtTop: false, // set to true, to put banner at top
         overlap: true, // set to true, to allow banner overlap webview
         offsetStatusBar: false, // set to true to avoid ios7 status bar overlap
+        autoShow:false,
         autoShowBanner: true, // auto show banners ad when loaded
         autoShowInterstitial: true // auto show interstitials ad when loaded	// Optional
     });
