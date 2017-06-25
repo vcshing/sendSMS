@@ -39,7 +39,7 @@ $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 
     // Set AdMobAds options:
-    admob.setOptions({
+    window.plugins.AdMob.setOptions({
         publisherId: "ca-app-pub-3715336230214756/7045197420", // Required
         interstitialAdId: "ca-app-pub-3715336230214756/8521930627", // Optional
         tappxIdAndroid: "", // Optional
@@ -53,11 +53,11 @@ $$(document).on('deviceready', function() {
     });
 
     // Start showing banners (atomatic when autoShowBanner is set to true)
-    admob.createBannerView();
-    admob.createInterstitialView();
+    window.plugins.AdMob.createBannerView();
+    window.plugins.AdMob.createInterstitialView();
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(10, function() {
-        adMob.showInterstitialAd(
+        window.plugins.AdMob.showInterstitialAd(
          true,
          function(){},
          function(e){}

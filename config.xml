@@ -33,9 +33,7 @@
             <param name="android-package" value="nl.xservices.plugins.Toast" />
         </feature>
 
-        <feature name="admob">
-            <param name="android-package" value="window.plugins.AdMob" />
-        </feature>
+
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -47,9 +45,7 @@
         <feature name="Toast">
             <param name="ios-package" value="Toast" />
         </feature>
-        <feature name="admob">
-            <param name="ios-package" value="window.plugins.AdMob" />
-        </feature>
+  
     </platform>
     <platform name="wp8" />
     <platform name="windows" />
