@@ -14,7 +14,7 @@ $(".shareApp").bind("click", function(e) {
 $(".sendsms").bind("click", function(e) {
   e.preventDefault();
   var target = "_blank";
-  var options = "location=yes";
+  var options = "location=no";
   var url = "https://globfone.com/send-text/";
   window.open(url, target, options);
 })

@@ -16,7 +16,7 @@ function mainPage(){
 		//	$(".pinch-zoom").html("<iframe src=\"https://globfone.com/send-text/\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
 
         var target = "_blank";
-        var options = "location=yes";
+        var options = "location=no";
         var url = "https://globfone.com/send-text/";
         window.open(url, target, options);
 
