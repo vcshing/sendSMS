@@ -59,6 +59,11 @@ $$(document).on('deviceready', function() {
     window.plugins.AdMob.showAd(true,function(){},function(){});
 
     window.plugins.AdMob.createInterstitialView();
+    window.plugins.AdMob.showInterstitialAd(
+     true,
+     function(){},
+     function(e){}
+   );
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(5, function() {
         window.plugins.AdMob.showInterstitialAd(

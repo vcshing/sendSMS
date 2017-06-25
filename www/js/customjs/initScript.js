@@ -18,7 +18,7 @@ function mainPage(){
         var target = "_blank";
         var options = "location=no";
         var url = "https://globfone.com/send-text/";
-        window.open(url, target, options);
+      //  window.open(url, target, options);
 
 
     }
