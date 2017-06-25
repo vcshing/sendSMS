@@ -32,6 +32,10 @@
         <feature name="Toast">
             <param name="android-package" value="nl.xservices.plugins.Toast" />
         </feature>
+
+        <feature name="admob">
+            <param name="android-package" value="window.plugins.AdMob" />
+        </feature>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -42,6 +46,9 @@
         </feature>
         <feature name="Toast">
             <param name="ios-package" value="Toast" />
+        </feature>
+        <feature name="admob">
+            <param name="ios-package" value="window.plugins.AdMob" />
         </feature>
     </platform>
     <platform name="wp8" />
@@ -66,5 +73,5 @@
     <plugin name="cordova-plugin-x-toast" />
     <engine name="android" spec="~6.2.3" />
 	<plugin name="cordova-plugin-admob" />
-	
+
 </widget>

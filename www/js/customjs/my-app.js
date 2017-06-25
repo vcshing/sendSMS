@@ -40,11 +40,11 @@ $$(document).on('deviceready', function() {
 
     // Set AdMobAds options:
     admob.setOptions({
-        publisherId: "ca-app-pub-3715336230214756/1171094220", // Required
-        interstitialAdId: "ca-app-pub-3715336230214756/2647827422", // Optional
+        publisherId: "ca-app-pub-3715336230214756/7045197420", // Required
+        interstitialAdId: "ca-app-pub-3715336230214756/8521930627", // Optional
         tappxIdAndroid: "", // Optional
         tappxShare: 0.1,
-        isTesting: false, // receiving test ads (do not test with real ads as your account will be banned)				// Optional
+        isTesting: true, // receiving test ads (do not test with real ads as your account will be banned)				// Optional
         bannerAtTop: false, // set to true, to put banner at top
         overlap: true, // set to true, to allow banner overlap webview
         offsetStatusBar: false, // set to true to avoid ios7 status bar overlap
@@ -54,10 +54,14 @@ $$(document).on('deviceready', function() {
 
     // Start showing banners (atomatic when autoShowBanner is set to true)
     admob.createBannerView();
-
+    admob.createInterstitialView();
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(10, function() {
-        admob.requestInterstitialAd();
+        adMob.showInterstitialAd(
+         true,
+         function(){},
+         function(e){}
+       );
     });
 
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
