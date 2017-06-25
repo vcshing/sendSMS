@@ -16,9 +16,6 @@
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.skyexplorer.scanner"
         },
-        "cordova-admob": {
-            "PACKAGE_NAME": "com.skyexplorer.scanner"
-        },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.skyexplorer.scanner"
         },
@@ -47,9 +44,5 @@
             "PACKAGE_NAME": "com.skyexplorer.tellyou"
         }
     },
-    "dependent_plugins": {
-        "cordova-connectivity-monitor": {
-            "PACKAGE_NAME": "com.skyexplorer.scanner"
-        }
-    }
+    "dependent_plugins": {}
 }
