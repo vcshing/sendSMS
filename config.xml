@@ -55,7 +55,6 @@
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
-    <plugin name="cordova-admob" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-dialogs" />
     <plugin name="cordova-plugin-inappbrowser" />
@@ -65,4 +64,5 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-x-socialsharing" />
     <plugin name="cordova-plugin-x-toast" />
+    <plugin name="cordova-admob" spec="^4.1.16" />
 </widget>
