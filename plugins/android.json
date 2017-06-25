@@ -36,6 +36,9 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
+        },
+        "cordova-plugin-admob": {
+            "PACKAGE_NAME": "com.skyexplorer.sendsms"
         }
     },
     "dependent_plugins": {
@@ -46,6 +49,9 @@
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         },
         "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.skyexplorer.sendsms"
+        },
+        "cordova-admobsdk": {
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         }
     }

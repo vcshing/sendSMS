@@ -28,14 +28,17 @@
             "cordova-plugin-vibration": {},
             "cordova-plugin-whitelist": {},
             "cordova-plugin-x-socialsharing": {},
-            "cordova-plugin-x-toast": {}
+            "cordova-plugin-x-toast": {},
+            "cordova-plugin-admob": {}
         },
         "platforms": [
             "android"
         ]
     },
     "dependencies": {
+        "cordova-admobsdk": "^1.0.4",
         "cordova-android": "^6.2.3",
+        "cordova-plugin-admob": "^3.2.4",
         "cordova-plugin-compat": "^1.0.0",
         "cordova-plugin-console": "~1.0.1",
         "cordova-plugin-statusbar": "~2.2.3",

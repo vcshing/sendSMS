@@ -51,6 +51,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"com.rjfun.cordova.plugin.AdMob\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -60,6 +64,10 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
                             "count": 1
                         }
                     ],
@@ -74,6 +82,10 @@
                         },
                         {
                             "xml": "<activity android:label=\"Share\" android:name=\"com.google.zxing.client.android.encode.EncodeActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
                             "count": 1
                         }
                     ],
@@ -137,6 +149,12 @@
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         },
         "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.skyexplorer.sendsms"
+        },
+        "cordova-admobsdk": {
+            "PACKAGE_NAME": "com.skyexplorer.sendsms"
+        },
+        "cordova-plugin-admob": {
             "PACKAGE_NAME": "com.skyexplorer.sendsms"
         }
     },
@@ -245,6 +263,14 @@
             "clobbers": [
                 "cordova.plugins.barcodeScanner"
             ]
+        },
+        {
+            "id": "cordova-plugin-admob.AdMob",
+            "file": "plugins/cordova-plugin-admob/www/AdMob.js",
+            "pluginId": "cordova-plugin-admob",
+            "clobbers": [
+                "window.plugins.AdMob"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -260,6 +286,8 @@
         "cordova-plugin-x-socialsharing": "5.1.6",
         "cordova-plugin-x-toast": "2.5.2",
         "cordova-plugin-compat": "1.0.0",
-        "phonegap-plugin-barcodescanner": "6.0.5"
+        "phonegap-plugin-barcodescanner": "6.0.5",
+        "cordova-admobsdk": "1.0.4",
+        "cordova-plugin-admob": "3.2.4"
     }
 }

@@ -138,6 +138,14 @@ module.exports = [
         "id": "cordova-plugin-device.DeviceProxy",
         "pluginId": "cordova-plugin-device",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-admob/www/AdMob.js",
+        "id": "cordova-plugin-admob.AdMob",
+        "pluginId": "cordova-plugin-admob",
+        "clobbers": [
+            "window.plugins.AdMob"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -154,7 +162,9 @@ module.exports.metadata =
     "cordova-plugin-x-toast": "2.5.2",
     "cordova-plugin-x-socialsharing": "5.1.6",
     "cordova-plugin-network-information": "1.3.2",
-    "cordova-plugin-device": "1.1.6"
+    "cordova-plugin-device": "1.1.6",
+    "cordova-admobsdk": "1.0.4",
+    "cordova-plugin-admob": "3.2.4"
 }
 // BOTTOM OF METADATA
 });

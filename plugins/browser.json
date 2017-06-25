@@ -42,7 +42,14 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.skyexplorer.tellyou"
+        },
+        "cordova-plugin-admob": {
+            "PACKAGE_NAME": "com.skyexplorer.sendsms"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-admobsdk": {
+            "PACKAGE_NAME": "com.skyexplorer.sendsms"
+        }
+    }
 }
