@@ -17,7 +17,8 @@ function mainPage(){
 		}
 
 		function onOffline() {
-			$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
+      myApp.alert("Please connect Internet");
+		//	$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
 		}
 }
 
