@@ -56,6 +56,8 @@ $$(document).on('deviceready', function() {
 
     // Start showing banners (atomatic when autoShowBanner is set to true)
     window.plugins.AdMob.createBannerView();
+    window.plugins.AdMob.showAd(true,function(){},function(){});
+
     window.plugins.AdMob.createInterstitialView();
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(5, function() {
