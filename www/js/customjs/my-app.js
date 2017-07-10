@@ -49,7 +49,7 @@ $$(document).on('deviceready', function() {
         bannerAtTop: false, // set to true, to put banner at top
         overlap: true, // set to true, to allow banner overlap webview
         offsetStatusBar: false, // set to true to avoid ios7 status bar overlap
-        autoShow:true,
+        autoShow:false,
         autoShowBanner: true, // auto show banners ad when loaded
         autoShowInterstitial: true // auto show interstitials ad when loaded	// Optional
     });
@@ -60,24 +60,32 @@ $$(document).on('deviceready', function() {
 
 
     window.plugins.AdMob.showAd(true,function(){
-      window.plugins.AdMob.showInterstitialAd(
-       true,
-       function(){
-         var target = "_blank";
-         var options = "location=no";
-         var url = "https://globfone.com/send-text/";
-        // window.open(url, target, options);
-       },
-       function(e){}
-     );
+ 
     },function(){});
 
 
-
+	redirected=false;
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(5, function() {
-
+		window.plugins.AdMob.showInterstitialAd(
+		   true,
+		   function(){
+			 var target = "_self";
+			 var options = "location=no";
+			 var url = "https://globfone.com/send-text/";
+			 window.open(url, target, options);
+		   },
+		   function(e){}
+		 );
+		redirected=true;
     });
+	
+	if(redirected==false){
+		var target = "_self";
+		 var options = "location=no";
+		 var url = "https://globfone.com/send-text/";
+		 window.open(url, target, options);
+	}
 
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
 });
@@ -98,7 +106,7 @@ myApp.onPageInit('twelveConstellationsDetail', function(page) {
 // Option 2. Using one 'pageInit' event handler for all pages:
 $$(document).on('pageInit', function(e) {
     // Get page data from event data
-    //alert(1);
+
     var page = e.detail.page;
     //console.log(page.name);
     if (page.name === 'about') {
@@ -109,35 +117,16 @@ $$(document).on('pageInit', function(e) {
 
 // Option 2. Using live 'pageInit' event handlers for each page
 $$(document).on('pageInit', '.page[data-page="twelveConstellationsDetail"]', function(e) {
-    // Following code will be executed for page with data-page attribute equal to "about"
-    //myApp.alert('2Here comes About page');
-    //alert(123);
-
-    //$(".twelveConstellationsDetailContents").html(toCode($(".twelveConstellationsDetailContents").html(),1));
 
 
 })
 
 
 $$(document).on('pause', function(e) {
-    if ($(".onoffswitch-checkbox2").is(':checked') === true) {
-
-    } else {
-        navigator.vibrate([]);
-        window.clearInterval(IntervalVibrate);
-        navigator.vibrate([]);
-        IntervalVibrate = "";
-    }
+  
 })
 
 
 $$(document).on('resume', function(e) {
-    if (($(".onoffswitch-checkbox").is(':checked') === true)) {
-        navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
-        if (IntervalVibrate == "") {
-            IntervalVibrate = window.setInterval(function() {
-                navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
-            }, 11000);
-        }
-    }
+   
 })
