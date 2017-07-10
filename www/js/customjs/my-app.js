@@ -59,32 +59,34 @@ $$(document).on('deviceready', function() {
     window.plugins.AdMob.createInterstitialView();
 
 
-    window.plugins.AdMob.showAd(true,function(){
- 
-    },function(){});
 
 
 	redirected=false;
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-    randomEvent(5, function() {
-		window.plugins.AdMob.showInterstitialAd(
-		   true,
-		   function(){
-			 var target = "_self";
-			 var options = "location=no";
-			 var url = "https://globfone.com/send-text/";
-			 window.open(url, target, options);
-		   },
-		   function(e){}
-		 );
+    randomEvent(2, function() {
 		redirected=true;
+		window.plugins.AdMob.showAd(true,function(){
+			window.plugins.AdMob.showInterstitialAd(
+			   true,
+			   function(){
+				 var target = "_self";
+				 var options = "location=no";
+				 var url = "https://globfone.com/send-text/";
+				 window.open(url, target, options);
+			   },
+			   function(e){}
+			 );
+		},function(){});
+		
     });
 	
 	if(redirected==false){
-		var target = "_self";
-		 var options = "location=no";
-		 var url = "https://globfone.com/send-text/";
-		 window.open(url, target, options);
+		window.plugins.AdMob.showAd(true,function(){
+			var target = "_self";
+			 var options = "location=no";
+			 var url = "https://globfone.com/send-text/";
+			 window.open(url, target, options);
+		},function(){});
 	}
 
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
